@@ -70,11 +70,11 @@ p {
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: relative;
   top: 50%;
   width: auto;
   padding: 16px;
   color: white;
+  background-color: black;
   font-weight: bold;
   font-size: 35px;
   transition: 0.6s ease;
@@ -86,22 +86,17 @@ p {
 }
 
 .prev {
-  right: 30%;
+  margin-right: auto;
 }
 
 .next {
-  left: 30%; 
+  margin-left: auto;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
@@ -153,7 +148,7 @@ p {
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .8} 
   to {opacity: 1} 
 }
 
@@ -177,12 +172,14 @@ p {
       <img class="mySlides" src="assets/images/unchanged/2.png" loading="lazy">
       <img class="mySlides" src="assets/images/unchanged/3.png" loading="lazy">
       <img class="mySlides" src="assets/images/unchanged/4.png" loading="lazy">
+    </div>
+    <div style="display: flex; align-content: center; align-items: center; justify-content: center;">
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
     <div id="chef" class="section-container">
         <div style="flex: 1; width: 50%; overflow:hidden">
-            <h1style="text-align: left; margin-bottom: 10%; margin-top: 0;">Le chef</h1>
+            <h1 style="text-align: left; margin-bottom: 10%; margin-top: 0;">Le chef</h1>
             <p style="text-align: left;">Philippe Lugnac s'amuse autant à inventer qu'à réinventer, faire briller le répertoire classique parisien, visiter de nouvelles terres avec attention et donner de l'éclat aux soirées festives qui se prolongent.</p>
             <img style="min-height: 0; object-fit: cover; width: 100%; height: 100%;" src="assets/images/unchanged/chef1.jpg" loading="lazy">
         </div>
